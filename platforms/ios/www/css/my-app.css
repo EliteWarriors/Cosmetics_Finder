@@ -1,0 +1,66 @@
+.page
+{
+	background-repeat:no-repeat;
+	background-color:#1b1b1b;
+	background-image: url('../img/background.png');
+	background-size: 100%;
+	background-position:bottom;
+}
+
+.statusbar-overlay, .navbar
+{
+	background-color: #c4202c;
+
+}
+.top-margin
+{
+	width:100%;
+	min-height: 20vh;
+	max-height: 30vh;
+}
+.logo
+{
+	width:47.2vw;
+	min-height:24.8vw;
+	background-image:url('../img/logo.png');
+	background-repeat: no-repeat;	
+	background-size:100% auto;
+	margin:0 auto;
+}
+.item-link:active
+{
+	-webkit-transform:scale3d(0.98,0.98,0.98);
+	opacity:0.8;
+}
+
+.below-logo
+{
+	width:135px;
+	margin:5vh auto;
+}
+.item-link .item-inner
+{
+	color:white;
+}
+
+.list-block ul
+{
+	background:transparent;
+}
+.list-block ul .item-media img
+{
+	width:10vw;
+}
+#picker-brands
+{
+	color:white;
+}
+.list-block ul::before, .list-block ul::after
+{
+	background-color: transparent;
+}
+.select-area
+{
+	width:80%;
+	margin:0 auto;
+}
