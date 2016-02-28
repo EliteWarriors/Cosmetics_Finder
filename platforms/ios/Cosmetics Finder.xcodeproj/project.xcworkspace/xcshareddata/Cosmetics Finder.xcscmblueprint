@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "EBF0406B6C980FD34A6AF43D7DF4B8141F478759",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6EF1C0177B9AAECE1DFA3D351556E50031E2E34F" : 0,
+    "EBF0406B6C980FD34A6AF43D7DF4B8141F478759" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C84EAE14-CE96-49BF-9225-3E1C6734BACA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6EF1C0177B9AAECE1DFA3D351556E50031E2E34F" : "Cosmetics_Finder\/www\/",
+    "EBF0406B6C980FD34A6AF43D7DF4B8141F478759" : "Cosmetics_Finder\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Cosmetics Finder",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "platforms\/ios\/Cosmetics Finder.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/andyjohan\/Findation2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6EF1C0177B9AAECE1DFA3D351556E50031E2E34F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/andyjohan\/Cosmetics_Finder.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EBF0406B6C980FD34A6AF43D7DF4B8141F478759"
+    }
+  ]
+}

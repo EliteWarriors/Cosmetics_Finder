@@ -17,7 +17,7 @@
  under the License.
  */
 //
-// Prefix header for all source files of the 'Findation' target in the 'Findation' project
+// Prefix header for all source files of the 'Cosmetics Finder' target in the 'Cosmetics Finder' project
 //
 
 #ifdef __OBJC__
