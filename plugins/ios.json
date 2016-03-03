@@ -9,6 +9,9 @@
     "installed_plugins": {
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.alberteinstein.findation"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.alberteinstein.findation"
         }
     },
     "dependent_plugins": {}

@@ -69,3 +69,7 @@ input[type="text"]
 {
 	color:white!important;
 }
+.temp
+{
+	display: none;
+}

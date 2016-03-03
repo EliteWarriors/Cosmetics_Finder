@@ -7,7 +7,7 @@ var myApp = new Framework7({
 });
 
 var $$ = Dom7;
-var base_url="http://findation.com/";
+var base_url="http://www.einsteinquotations.com/api/";
 var mainView = myApp.addView('.view-main', {
    
     dynamicNavbar: true,
@@ -80,7 +80,7 @@ var productDropDown = myApp.autocomplete({
         selectedBrands=Brand_ids[Brand_names.indexOf($$("#brand-dropdown").val())];
     	//alert(JSON.stringify(selectedBrands));
     	$$.ajax({
-            url: 'http://www.einsteinquotations.com/api/?mode=product&&brand_id='+selectedBrands,
+            url: base_url+'?mode=product&&brand_id='+selectedBrands,
             type: 'GET',
             dataType: 'json',
             success: function(data) { 
@@ -123,7 +123,7 @@ var shadeDropDown = myApp.autocomplete({
         var selectedProducts=Product_ids[Product_names.indexOf($$("#product-dropdown").val())];
     	//alert(JSON.stringify(selectedProducts));
     	$$.ajax({
-            url: 'http://www.einsteinquotations.com/api/?mode=shade&&product_id='+selectedProducts,
+            url: base_url+'?mode=shade&&product_id='+selectedProducts,
             type: 'GET',
             dataType: 'json',
             success: function(data) { 
@@ -139,7 +139,42 @@ var shadeDropDown = myApp.autocomplete({
 
 	}
 });
-myApp.onPageInit('search', function (page) {
-	
+myApp.onPageInit('searchresult', function (page) {
+	myApp.showIndicator();
+	$$.ajax({
+            url: base_url+'?mode=searches&&search_id=2461628',
+            type: 'GET',
+            dataType: 'text',
+            success: function(data) { 
+            	$$(".temp").html(data);
+                /*var count=data.contents().length;
+                alert(count);
+                // Hide Preoloader*/
+                var result=$(".temp").contents().find($(".matches")[0]).html().trim();
+                
+                $$(".temp").html(result);
+                var searchResult=$(".temp").children('.match-meta');
+                $(".media-list").html();
+                for(var i=0;i<searchResult.length;i++)
+                {
+                	$$(".media-list ul").append('<li>');
+                	$$(".media-list ul").append(searchResult[i]);
+                	$$(".media-list ul").append('</li>');
+                }
+                $(".media-list").contents().find('.media').addClass('item-link');
+                $(".media-list").contents().find('.media').addClass('item-content');
+                $(".media-list").contents().find('.img').attr('width','80px');
+	            $(".media-list").contents().find('.media-left').addClass('item-media');
+	            $(".media-list").contents().find('.media-body').addClass('item-inner');
+	            $(".media-list").contents().find('.buy-stuff').remove();
+	            $(".media-list").contents().find('.tried-it').remove();
+                myApp.hideIndicator();
+
+            }
+        });
 });
 
+function generate_item(htmlstring)
+{
+	
+}
